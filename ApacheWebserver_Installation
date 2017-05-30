@@ -1,0 +1,24 @@
+
+Installion of Apache webserver
+
+apr 
+
+./configure --prefix=/home/apache
+./configure --prefix=/opt/apache2
+make
+make install
+
+
+apr-util-1
+
+./configure --prefix=/opt/apache2  --with-apr=/opt/apache2
+make
+make install
+
+
+httpd-2
+
+./configure --prefix=/opt/apache2  --with-apr=/opt/apache2  --with-apr-util=/opt/apache2   --enable-so 
+--with-pcre=/opt/apache2/pcre2-10.23/pcre2-config
+make 
+make install
