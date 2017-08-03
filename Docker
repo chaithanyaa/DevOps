@@ -1,0 +1,10 @@
+
+
+Docker commonds
+
+
+docker help ----displays all useful commands
+docker images ---displays a list of existing  images in docker system
+docker ps ----- list all active containers
+docker ps -a ----displays the list of all the container processes which are running or have run on past
+docker history  imagename ----- histroy of base imagename
