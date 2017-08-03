@@ -1,0 +1,53 @@
+
+git commands
+
+git init    ----- creates a new local repository
+git add .    --- complete files addition or file name 
+git status    ---- to check status
+git commit -m "msg" ---- to commit the changes in the HEAD of local repository
+git commit -a -m "msg" --- to commit the changes without staging
+git commit --amend -m "newmsg"  ------edit an incoorect commit msg
+git log -p --- shows the detailed info of commit and changes made
+git branch -v --- show branch names
+git branch newbranch (git checkout -b newbranch)--- creates a new branch
+git checkout branchname ---- changing the branch name
+git merge srcbranch destbranch --- mergering changes to repository
+git stash ----  save the local modifications(without commit) and revert back to match the head
+git stash apply --- switch to the branch where changes are saved
+
+
+
+git remote -v ---- shows the existing remote repository
+git clone path ------- creating a working copy in local repository
+git fetch origin ---- to fetch the remote repository changes since last cloned
+git pull origin --- to fetch and merge  from remote repoistory to working directory
+git push origin master --- to push changes to master branch of the remote repository
+
+
+git config --global user.name "chaithanyaa"
+git config --global user.email "chaitanya.1@tcs.com"
+
+git reset HEAD~ ---undo last commit and keep changes
+git reset HEAD~2  ----undo last 2 commits and keep changes
+git reset --hard HEAD~2 --- undo last 2 commits and discard changes
+git reset filename ----remove file from git
+git revert specifiedid ----revert specific id commited
+git revert HEAD^ ----revert 2nd last commit
+git revert -n HEAD  --- undo last commit without creating a revert commit
+
+
+
+Getting an error saying i dont have latest remote changes
+
+    git fetch
+    git rebase origin master -------Now uptodate with repoistory
+    git push origin master
+    
+
+git reset --hard master @{"10min ago"}   --- undo last pull
+
+
+
+
+
+
