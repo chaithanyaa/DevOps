@@ -1,0 +1,11 @@
+
+
+A software development practice where contributors are integrating their work very frequently ---- continuous integration
+
+
+A software development discipline where software is released continuously as part of an automated pipeline. ---- continuous deployment
+
+A software development discipline where software is built so that it can be released to production at any time ---continuous delivery 
+
+
+Continuous delivery means the code CAN be released at any time, while continuous deployment means it is released continuously.
